@@ -1,0 +1,6 @@
+{
+  "name": "The Ocean Tech Enterprises",
+  "description": "Enterprise AI Solutions, Autonomous Agents, Computer Vision & Next-Gen Cognitive Systems by Muhammad Mubashir Ali.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
