@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { Eye, Sliders, Scan, CheckCircle2, Shield, RefreshCw, Upload, Crosshair } from 'lucide-react';
+import {
+  luxuryOceanAiCore,
+  projectAutonomousLogistics,
+  projectMedicalVision,
+} from '../../assets/images/index.ts';
 
 export const AuraMedVisionDemo: React.FC = () => {
   const [selectedFeed, setSelectedFeed] = useState<'medical' | 'core' | 'logistics' | 'custom'>('medical');
@@ -12,7 +17,7 @@ export const AuraMedVisionDemo: React.FC = () => {
   const feeds = {
     medical: {
       name: 'Cardiopulmonary MRI Volumetric Scan',
-      image: '/src/assets/images/project_medical_vision_1793217410053.jpg',
+      image: projectMedicalVision,
       objects: [
         { label: 'PULMONARY_LATTICE_A', confidence: 99.4, x: 34, y: 28, w: 32, h: 42, status: 'Normal' },
         { label: 'NODULE_MICRO_ROI', confidence: 97.2, x: 58, y: 44, w: 14, h: 16, status: 'Benign Density' },
@@ -22,7 +27,7 @@ export const AuraMedVisionDemo: React.FC = () => {
     },
     core: {
       name: 'Quantum AI Optical Refraction Matrix',
-      image: '/src/assets/images/luxury_ocean_ai_core_1793259140185.jpg',
+      image: luxuryOceanAiCore,
       objects: [
         { label: 'QUANTUM_CORE_NEXUS', confidence: 99.8, x: 28, y: 18, w: 44, h: 55, status: 'Resonant' },
         { label: 'OCEANIC_CORONA_FLUID', confidence: 98.4, x: 20, y: 72, w: 60, h: 18, status: 'Dynamic' },
@@ -32,7 +37,7 @@ export const AuraMedVisionDemo: React.FC = () => {
     },
     logistics: {
       name: 'Industrial Autonomous Carrier Fleet',
-      image: '/src/assets/images/project_autonomous_logistics_1793217409958.jpg',
+      image: projectAutonomousLogistics,
       objects: [
         { label: 'ROBOTIC_CARRIER_UNIT_1', confidence: 98.6, x: 20, y: 35, w: 25, h: 42, status: 'Navigating' },
         { label: 'PAYLOAD_CONTAINER_SECURED', confidence: 99.7, x: 50, y: 20, w: 20, h: 30, status: 'Optimal' },

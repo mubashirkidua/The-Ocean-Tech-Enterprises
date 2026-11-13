@@ -99,8 +99,8 @@ END:VCARD`;
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.currentTarget as HTMLImageElement;
-                      if (!target.src.includes('ceo.jpg_c45767d3.jpg')) {
-                        target.src = '/assets/aistudio/ceo.jpg_c45767d3.jpg';
+                      if (!target.src.endsWith('/ceo.jpg')) {
+                        target.src = '/ceo.jpg';
                       } else {
                         target.src = '/assets/ceo_mubashir_ali.jpg';
                       }
@@ -331,7 +331,7 @@ END:VCARD`;
                     className="w-full h-full object-cover object-[center_12%] filter contrast-[1.03]"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = '/assets/aistudio/ceo.jpg_c45767d3.jpg';
+                      (e.currentTarget as HTMLImageElement).src = '/ceo.jpg';
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />

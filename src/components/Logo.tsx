@@ -13,27 +13,27 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
   const iconDimensions = {
     sm: 'w-8 h-8',
-    md: 'w-10 h-10',
+    md: 'w-8 h-8 sm:w-10 sm:h-10',
     lg: 'w-14 h-14',
     xl: 'w-18 h-18',
   }[size];
 
   const mainTextClass = {
-    sm: 'text-sm tracking-[0.18em]',
-    md: 'text-base tracking-[0.2em]',
+    sm: 'text-xs sm:text-sm tracking-[0.14em]',
+    md: 'text-xs sm:text-sm xl:text-base tracking-[0.12em] sm:tracking-[0.18em]',
     lg: 'text-xl tracking-[0.22em]',
     xl: 'text-2xl tracking-[0.25em]',
   }[size];
 
   const subTextClass = {
-    sm: 'text-[8.5px] tracking-[0.38em]',
-    md: 'text-[9.5px] tracking-[0.42em]',
+    sm: 'text-[8px] tracking-[0.3em]',
+    md: 'text-[8px] sm:text-[9px] tracking-[0.28em] sm:tracking-[0.38em]',
     lg: 'text-[11.5px] tracking-[0.45em]',
     xl: 'text-[13px] tracking-[0.5em]',
   }[size];
 
   return (
-    <div className={`inline-flex items-center gap-3.5 group select-none ${className}`}>
+    <div className={`inline-flex items-center gap-2 sm:gap-3 group select-none ${className}`}>
       {/* Luxury Oceanic Diamond Crest Insignia */}
       <div className={`relative ${iconDimensions} shrink-0 transition-all duration-500 group-hover:scale-105`}>
         {/* Ambient Holographic Glow */}

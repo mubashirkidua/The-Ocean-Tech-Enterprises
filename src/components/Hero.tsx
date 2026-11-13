@@ -10,6 +10,7 @@ import {
   Maximize2
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/company.ts';
+import { projectMedicalVision } from '../assets/images/index.ts';
 
 interface HeroProps {
   onOpenConsultation?: () => void;
@@ -56,7 +57,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
         {/* 2-Column Split: LEFT SIDE = LIVE AI IMAGE | RIGHT SIDE = LUXURY HERO TEXT */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center">
           {/* LEFT SIDE: LIVE AI LUXURY IMAGE CONTAINER */}
-          <div className="lg:col-span-6 flex flex-col items-center justify-center">
+          <div className="lg:col-span-6 flex flex-col items-center justify-center min-w-0 w-full">
             <div
               ref={cardRef}
               onMouseMove={handleMouseMove}
@@ -86,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
               <div className="relative w-full h-full rounded-2xl overflow-hidden bg-slate-950 border border-cyan-400/35 shadow-2xl">
                 {/* Generated High-Res Live AI Visual */}
                 <img
-                  src="/src/assets/images/project_medical_vision_1793217410053.jpg"
+                  src={projectMedicalVision}
                   alt="The Ocean Tech Enterprises Cognitive AI Neural Interface"
                   className={`w-full h-full object-cover filter brightness-100 contrast-105 group-hover:scale-105 transition-all duration-700 ${
                     isCorePulsing ? 'scale-108 brightness-125' : ''

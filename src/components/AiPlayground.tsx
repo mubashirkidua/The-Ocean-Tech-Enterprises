@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import {
+  projectAutonomousLogistics,
+  projectFintechSwarm,
+  projectMedicalVision,
+} from '../assets/images/index.ts';
 import { Play, CheckCircle2, Cpu, Eye, Network, Search, Layers, RefreshCw } from 'lucide-react';
 
 export const AiPlayground: React.FC = () => {
@@ -164,10 +169,10 @@ export const AiPlayground: React.FC = () => {
                   <img
                     src={
                       visionScenario === 'medical'
-                        ? '/src/assets/images/project_medical_vision_1793217410053.jpg'
+                        ? projectMedicalVision
                         : visionScenario === 'industrial'
-                        ? '/src/assets/images/project_autonomous_logistics_1793217409958.jpg'
-                        : '/src/assets/images/project_fintech_swarm_1793217411019.jpg'
+                        ? projectAutonomousLogistics
+                        : projectFintechSwarm
                     }
                     alt="Neural Vision Feed"
                     className="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-700"

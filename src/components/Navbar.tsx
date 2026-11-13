@@ -70,29 +70,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 w-full max-w-[100vw] overflow-x-clip z-40 transition-all duration-500 ${
           isScrolled
             ? 'luxury-nav py-3'
-            : 'bg-gradient-to-b from-[#040812]/95 via-[#040812]/80 to-transparent py-4 sm:py-5 border-b border-cyan-500/10'
+            : 'bg-gradient-to-b from-[#040812]/95 via-[#040812]/80 to-transparent py-3.5 sm:py-4 border-b border-cyan-500/10'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="flex items-center justify-between gap-3 sm:gap-6">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
+          <div className="flex items-center justify-between gap-2 sm:gap-4 min-w-0">
             {/* Zone 1: Luxury Brand wordmark & Logo */}
             <a
               href="#"
-              className="flex items-center gap-3 whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg group"
+              className="flex items-center gap-2 sm:gap-3 whitespace-nowrap shrink-0 min-w-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg group"
             >
               <Logo size="md" />
             </a>
 
             {/* Zone 2: Desktop Luxury Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-3 xl:gap-5 text-xs uppercase font-medium tracking-[0.1em] text-slate-300 shrink-0">
+            <nav className="hidden xl:flex items-center gap-3 2xl:gap-5 text-[11px] 2xl:text-xs uppercase font-medium tracking-[0.05em] 2xl:tracking-[0.09em] text-slate-300 shrink-0">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="hover:text-cyan-300 transition-colors whitespace-nowrap py-1 relative hover:underline underline-offset-8 decoration-cyan-400/50 text-[11px] xl:text-xs"
+                  className="hover:text-cyan-300 transition-colors whitespace-nowrap py-1 relative hover:underline underline-offset-8 decoration-cyan-400/50"
                 >
                   {link.label}
                 </a>
@@ -100,23 +100,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
             </nav>
 
             {/* Zone 3: Primary CTA + Always-Visible 3-Lines Menu Feature */}
-            <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
               {/* Primary Consultation Action Button */}
               <button
                 onClick={onOpenConsultation}
-                className="relative group overflow-hidden inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 text-xs font-semibold tracking-wider uppercase text-slate-950 bg-gradient-to-r from-[#e0f2fe] via-cyan-300 to-teal-300 hover:from-white hover:to-cyan-200 rounded-lg transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0.25)] hover:shadow-[0_0_30px_rgba(0,240,255,0.45)] whitespace-nowrap active:scale-95"
+                className="relative group overflow-hidden inline-flex items-center gap-1.5 px-2.5 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-slate-950 bg-gradient-to-r from-[#e0f2fe] via-cyan-300 to-teal-300 hover:from-white hover:to-cyan-200 rounded-lg transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0.25)] hover:shadow-[0_0_30px_rgba(0,240,255,0.45)] whitespace-nowrap active:scale-95"
               >
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out" />
-                <Sparkles className="w-3.5 h-3.5 text-slate-900" />
+                <Sparkles className="w-3.5 h-3.5 text-slate-900 shrink-0" />
                 <span className="hidden sm:inline">Schedule AI Call</span>
                 <span className="sm:hidden">Schedule</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
               </button>
 
               {/* Three Lines (Hamburger Menu) Button - ALWAYS VISIBLE ON ALL SCREENS */}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-lg border border-cyan-500/35 bg-[#061022]/90 hover:bg-cyan-950/60 text-cyan-300 hover:text-white transition-all shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:shadow-[0_0_22px_rgba(0,240,255,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 group cursor-pointer"
+                className="flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-lg border border-cyan-500/35 bg-[#061022]/90 hover:bg-cyan-950/60 text-cyan-300 hover:text-white transition-all shadow-[0_0_15px_rgba(0,240,255,0.15)] hover:shadow-[0_0_22px_rgba(0,240,255,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 group cursor-pointer shrink-0"
                 aria-label="Toggle navigation menu"
                 title="Toggle Executive Menu (3 Lines)"
               >
@@ -138,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                     }`}
                   />
                 </div>
-                <span className="text-[11px] font-mono uppercase tracking-widest text-slate-200 group-hover:text-white font-semibold">
+                <span className="hidden xs:inline sm:inline text-[11px] font-mono uppercase tracking-widest text-slate-200 group-hover:text-white font-semibold">
                   {menuOpen ? 'Close' : 'Menu'}
                 </span>
               </button>

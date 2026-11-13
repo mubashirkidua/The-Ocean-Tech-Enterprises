@@ -1,4 +1,16 @@
-import ceoPhoto from "../assets/images/ceo_mubashir_ali.jpg";
+import {
+  ceoMubashirAli as ceoPhoto,
+  luxuryOceanAiCore,
+  oceanInteriorsMockup,
+  oceanPerfumesMockup,
+  oceanRealEstateMockup,
+  oceanWatchesMockup,
+  productCopyEngine,
+  productVoiceAgent,
+  projectAutonomousLogistics,
+  projectFintechSwarm,
+  projectMedicalVision,
+} from "../assets/images/index.ts";
 
 export interface CeoInfo {
   name: string;
@@ -258,7 +270,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "web-deployments",
     relatedServiceTitle: "Bespoke Full-Stack Web Platform",
     productBadge: "Live Vercel Deployment",
-    image: "/src/assets/images/ocean_interiors_mockup_1793695801965.jpg",
+    image: oceanInteriorsMockup,
     headline: "Bespoke Architecture Studio with Interactive Turnkey Budget Calculator (PKR)",
     summary: "A luxury architectural & interior design platform featuring an interactive turnkey project budget calculator (PKR), before/after renovation sliders, 3D space visualizer, tactile material finishes catalog, and direct CEO WhatsApp consultation.",
     metrics: [
@@ -280,7 +292,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "web-deployments",
     relatedServiceTitle: "Full-Stack Web & Firebase Cloud Platform",
     productBadge: "Live Vercel Deployment",
-    image: "/src/assets/images/ocean_real_estate_1793736279515.jpg",
+    image: oceanRealEstateMockup,
     headline: "Full-Featured Luxury Coastal Real Estate Platform with Real-Time Firebase Sync",
     summary:
       "A modern luxury real estate platform built with React, TypeScript, and Firebase. Features real-time property synchronization, dynamic category & price filtering, tour booking, user listings, and a role-based admin portal.",
@@ -313,7 +325,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "web-deployments",
     relatedServiceTitle: "Full-Stack E-Commerce & Retail Platform",
     productBadge: "Live Vercel Deployment",
-    image: "/src/assets/images/ocean_watches_mockup_1793740097738.jpg",
+    image: oceanWatchesMockup,
     headline: "Haute Horlogerie E-Commerce Platform with Dark Glassmorphism UI",
     summary:
       "A full-stack luxury watch store with a dark glassmorphism UI, 10-watch flagship collection, persistent cart/checkout, customer accounts, coupon engine, payments, and an administrative inventory management console.",
@@ -349,7 +361,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "web-deployments",
     relatedServiceTitle: "Next.js 16 E-Commerce Architecture",
     productBadge: "Live Vercel Deployment",
-    image: "/src/assets/images/ocean_perfumes_mockup_1793803431286.jpg",
+    image: oceanPerfumesMockup,
     headline: "Luxury Ocean-Inspired Fragrance Boutique with Card & COD Checkout",
     summary:
       "A luxury ocean-inspired perfume brand platform built with Next.js 16 and Tailwind CSS v4. Features an artisan olfactory collection, dynamic multi-tier checkout (Credit Card + COD), real-time stock control, and an administrative inventory dashboard.",
@@ -384,7 +396,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "ai-copywriting",
     relatedServiceTitle: "AI Copywriting & Conversion Content Engineering",
     productBadge: "Ready-to-Deploy Product",
-    image: "/src/assets/images/product_copy_engine_1793304834387.jpg",
+    image: productCopyEngine,
     headline: "Autonomous Brand-Voice & Programmatic Conversion Engine",
     summary: "Deploys custom-tuned LLMs trained on direct-response copywriting principles, generating high-converting sales landing pages, paid ad variations, and high-ranking SEO content.",
     metrics: [
@@ -404,7 +416,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "conversational-voice",
     relatedServiceTitle: "Conversational AI & Multilingual Voicebots",
     productBadge: "Enterprise Voice Solution",
-    image: "/src/assets/images/product_voice_agent_1793304833543.jpg",
+    image: productVoiceAgent,
     headline: "Sub-400ms Multilingual Telephony & Conversational Voice Agent",
     summary: "Real-time conversational voice assistant with human-grade emotional inflection, handling inbound customer calls, automated outbound appointments, and live CRM synchronization.",
     metrics: [
@@ -424,7 +436,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "computer-vision",
     relatedServiceTitle: "Computer Vision & Intelligent Video Analytics",
     productBadge: "High-Precision Perception",
-    image: "/src/assets/images/project_medical_vision_1793217410053.jpg",
+    image: projectMedicalVision,
     headline: "Real-Time Neural Diagnostic & Radiological Screening Engine",
     summary: "Architected a high-precision computer vision pipeline analyzing MRI and CT scans to assist clinicians with micro-lesion detection in under 1.2 seconds.",
     metrics: [
@@ -444,7 +456,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "autonomous-agents",
     relatedServiceTitle: "Autonomous AI Agents & Swarm Automation",
     productBadge: "Autonomous Agent Fleet",
-    image: "/src/assets/images/project_fintech_swarm_1793217411019.jpg",
+    image: projectFintechSwarm,
     headline: "Autonomous Multi-Agent High-Frequency Arbitrage Network",
     summary: "Designed an autonomous swarm of cognitive agents monitoring cross-exchange liquidity imbalances, macro news sentiment, and statistical arbitrage signals.",
     metrics: [
@@ -464,7 +476,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "generative-ai-llm",
     relatedServiceTitle: "Enterprise Generative AI & Custom LLMs",
     productBadge: "Air-Gapped Knowledge System",
-    image: "/src/assets/images/luxury_ocean_ai_core_1793259140185.jpg",
+    image: luxuryOceanAiCore,
     headline: "Air-Gapped Private Enterprise Neural Knowledge Hub",
     summary: "Proprietary on-premises and sovereign cloud knowledge engine combining dense vector indexing with self-correcting RAG for hallucination-free enterprise intelligence.",
     metrics: [
@@ -484,7 +496,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     relatedServiceId: "predictive-analytics",
     relatedServiceTitle: "Predictive Analytics & Machine Learning Engines",
     productBadge: "Industrial ML System",
-    image: "/src/assets/images/project_autonomous_logistics_1793217409958.jpg",
+    image: projectAutonomousLogistics,
     headline: "Lidar-Guided Autonomous Fleet & Predictive Logistics Dispatcher",
     summary: "Built an intelligent multi-robot coordination system utilizing real-time computer vision and spatial graph neural networks for warehouse fulfillment.",
     metrics: [
@@ -569,7 +581,7 @@ export const WEB_DEPLOYMENTS: WebDeployment[] = [
     category: "Full-Stack Architectural Platform",
     clientSector: "Luxury Architecture & Turnkey Interiors",
     liveUrl: "https://interior-designing-website-woad.vercel.app",
-    image: "/src/assets/images/ocean_interiors_mockup_1793695801965.jpg",
+    image: oceanInteriorsMockup,
     summary:
       "A luxury architectural & interior design platform featuring an interactive turnkey project budget calculator (PKR), before/after renovation sliders, 3D space visualizer, tactile material finishes catalog, and direct CEO WhatsApp consultation.",
     descriptionDetailed:
@@ -607,7 +619,7 @@ export const WEB_DEPLOYMENTS: WebDeployment[] = [
     category: "Full-Stack Real Estate Platform",
     clientSector: "Luxury Coastal Properties & Estates",
     liveUrl: "https://real-state-website-kappa-nine.vercel.app",
-    image: "/src/assets/images/ocean_real_estate_1793736279515.jpg",
+    image: oceanRealEstateMockup,
     summary:
       "A full-featured luxury coastal real estate platform featuring real-time property listings, dynamic search & filtering, user authentication, interactive tour bookings, and a complete admin management portal powered by Firebase Firestore.",
     descriptionDetailed:
@@ -653,7 +665,7 @@ export const WEB_DEPLOYMENTS: WebDeployment[] = [
       { name: "CEO Profile (about.html)", url: "https://the-ocean-1-watches-landing-page-1.vercel.app/about.html" },
       { name: "Luxury Collection & Checkout (luxury.html)", url: "https://the-ocean-1-watches-landing-page-1.vercel.app/luxury.html", badge: "Checkout" },
     ],
-    image: "/src/assets/images/ocean_watches_mockup_1793740097738.jpg",
+    image: oceanWatchesMockup,
     founder: {
       name: "Muhammad Mubashir Ali",
       role: "Founder & CEO",
@@ -707,7 +719,7 @@ export const WEB_DEPLOYMENTS: WebDeployment[] = [
       { name: "Storefront (Home)", url: "https://perfumes-landing-page-bgjf.vercel.app" },
       { name: "CEO Profile (/ceo)", url: "https://perfumes-landing-page-bgjf.vercel.app/ceo", badge: "CEO Page" },
     ],
-    image: "/src/assets/images/ocean_perfumes_mockup_1793803431286.jpg",
+    image: oceanPerfumesMockup,
     founder: {
       name: "Muhammad Mubashir Ali",
       role: "Founder & CEO",
