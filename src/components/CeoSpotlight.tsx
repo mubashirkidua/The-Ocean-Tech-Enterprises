@@ -166,6 +166,9 @@ END:VCARD`;
                 <p className="text-sm font-semibold text-teal-300 font-mono">
                   {COMPANY_INFO.ceo.role}
                 </p>
+                <div className="mt-3 p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/25 text-xs sm:text-sm font-mono text-cyan-200 leading-relaxed">
+                  {COMPANY_INFO.ceo.headline}
+                </div>
               </div>
 
               {/* Bio & Vision */}
@@ -370,8 +373,11 @@ END:VCARD`;
                     {COMPANY_INFO.ceo.name}
                   </h3>
                   <p className="text-xs font-mono text-teal-300 mt-0.5">
-                    {COMPANY_INFO.ceo.title}
+                    {COMPANY_INFO.ceo.role}
                   </p>
+                  <div className="mt-2.5 p-2.5 rounded-lg bg-cyan-950/50 border border-cyan-500/30 text-[11px] sm:text-xs font-mono text-cyan-200 leading-relaxed">
+                    {COMPANY_INFO.ceo.headline}
+                  </div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-cyan-500/25 relative">

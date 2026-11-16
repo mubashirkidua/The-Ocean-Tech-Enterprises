@@ -16,6 +16,8 @@ export interface CeoInfo {
   name: string;
   role: string;
   title: string;
+  headline: string;
+  specialties: string[];
   photoUrl: string;
   email: string;
   mobile: string;
@@ -97,7 +99,14 @@ export const COMPANY_INFO = {
   ceo: {
     name: "Muhammad Mubashir Ali",
     role: "Founder & Chief Executive Officer",
-    title: "AI Solutions Architect & Founder",
+    title: "AI Automation Engineer | Agentic AI Developer | AI Agent Orchestration",
+    headline: "AI Automation Engineer | Agentic AI Developer | AI Agent Orchestration | Turning Manual Processes into Autonomous AI Workflows",
+    specialties: [
+      "AI Automation Engineer",
+      "Agentic AI Developer",
+      "AI Agent Orchestration",
+      "Turning Manual Processes into Autonomous AI Workflows",
+    ],
     photoUrl: ceoPhoto,
     email: "alimuhammd98573@gmail.com",
     mobile: "0323-2930657",
